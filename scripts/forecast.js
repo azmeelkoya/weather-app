@@ -22,12 +22,3 @@ const getCondition = async (locationKey) => {
     return data[0];
 };
 
-// getCity('manchester')
-//     .then( data => console.log(data.Key))
-//     .catch( err => console.log(err));
-
-getCity('calicut').then(data => {
-    return getCondition(data.Key);
-}).then(data => {
-    console.log(data);
-}).catch(err => console.log(err));
